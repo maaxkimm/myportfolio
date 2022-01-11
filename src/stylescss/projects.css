@@ -1,0 +1,219 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: black;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 3%;
+  text-align: center;
+  font-family: "trebuchet MS", sans-serif;
+}
+.container-1 {
+  display: flex;
+  flex-direction: column;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  color: black;
+  align-items: center;
+  z-index: 3;
+}
+.header-link {
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  margin: auto;
+}
+.header-link a {
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+}
+.logo {
+  padding-left: 30px;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.socials {
+  padding-right: 1%;
+}
+
+.wrapper2 {
+  justify-content: right;
+  display: flex;
+}
+
+.hover-1 {
+  color: black;
+  transition: all 0.25s linear;
+  position: relative;
+}
+.hover-1:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(60deg, rgb(54, 53, 53) 0%, #527beb 100%);
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  transform-origin: left;
+  transform: scale(0);
+  transition: 0.25s linear;
+}
+.hover-1:hover:before {
+  transform: scale(1);
+}
+
+.name {
+  margin: auto;
+}
+ul {
+  display: flex;
+  top: 50%;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 53px;
+  font-size: 30px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid black;
+  z-index: 5;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before {
+  background: black;
+}
+
+ul li:nth-child(2) a:before {
+  background: #0077b5;
+}
+
+ul li:nth-child(3) a:before {
+  background: linear-gradient(
+    180deg,
+    rgb(134, 134, 243) 0%,
+    rgb(243, 155, 155) 100%
+  );
+}
+
+.filler {
+  height: 102px;
+  width: 100%;
+}
+.lineUp {
+  animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.iCard {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+.iCard-img {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+.iCard-img-1 {
+  display: block;
+  width: 100%;
+}
+.shadow-1 {
+  box-shadow: 0 12px 12px 0 rgba(10, 10, 10);
+}
+.blue-hover {
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
+}
+.blue-hover:hover {
+  transform: translateY(-5px);
+  border: none;
+  border-bottom: 5px solid #7c8c94;
+}
+.iCard-txt {
+  margin: 20px;
+  font-size: smaller;
+}
+
+.see-all {
+  text-decoration: none;
+  padding-bottom: 8px;
+}

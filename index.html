@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/stylescss/landing.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Max Kim</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <div class="wrapper">
+                <div class="wrapper2">
+                    <div class="header-link">
+                        <a class="hover-1" href="index.html">Home</a>
+                        <a class="hover-1" href="./about.html">About</a>
+                        <a class="hover-1" href="./projects.html">Projects</a>
+                        <a class="hover-1" href="./src/Max_Kim_Resume [2].pdf"
+                            download="Max_Kim_Resume.pdf">Resume</a>
+                    </div>
+                </div>
+                <div class="name">
+                    <h1>Max Kim</h1>
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/maaxkimm" target="_blank">
+                                <i class="fab fa-github icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/maax-kim" target="_blank">
+                                <i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:maxkim@berkeley.edu" target="_blank"><i
+                                    class="far fa-paper-plane icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="filler">
+        </div>
+        <div class="wrapper">
+            <div class="welcome-text">
+                <h2 class="lineUp">Hi, I'm Max </h2>
+            </div>
+        </div>
+        <div class="divider lineUp">
+            <hr>
+        </div>
+        <div class=content-wrapper>
+            <div class="project-content">
+                <h1 class="lineUp">Past Project</h1>
+                <div class="iCard shadow-1 blue-hover lineUp" style="width: 400px; overflow: hidden;">
+                    <img src="src/img/gitmerge.webp" class="iCard-img">
+                    <div>
+                        <h3>
+                            Mini Git
+                        </h3>
+                        <p class="iCard-txt">
+                            I created a version-control system in Java capable of mimicking features of Git such as saving contents of
+                            entire directories of files using file persistence and restoring versions of one or more files for a more organized workflow.
+                        </p>
+                        <div>
+                            Technologies:
+                            <span style="font-size: smaller;">Java</span>
+                        </div>
+                        <p>
+                            <a class="hover-1 see-all lineUp extra" href="#" target="_blank">-GitHub-</a>
+                        </p>
+                    </div>
+                </div>
+                <a class="hover-1 see-all lineUp" href="./projects.html" target="_blank">-See all Projects-</a>
+            </div>
+            <div class="current-development">
+                <h1 class="lineUp">Current Project</h2>
+                    <div class="iCard shadow-1 blue-hover lineUp" style="width: 400px; overflow: hidden;">
+                        <img src="src/img/RESTAPI.png" class="iCard-img">
+                        <div>
+                            <h3>
+                                Commands REST API
+                            </h3>
+                            <p class="iCard-txt">
+                                I'm currently working on developing an API providing command line snippets 
+                                of code using .NET Core with C#. Specifically, I'm looking to gain more familiarity
+                                with Dependency Injection, DTOs, Entity Framework Core O/RM, Docker, MVC architecture, etc.
+                            </p>
+                            <div>
+                                Technologies:
+                                <span style="font-size: smaller;">REST APIs, SQL Server Express, C#, .NET CORE</span>
+                            </div>
+                            <p>
+                                <a class="hover-1 see-all lineUp extra" href="#" target="_blank">-GitHub-</a>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div style="padding-top: 3%">
+            <button onclick="Home()" id="home" title="Home" class="bn30 lineUp">
+                Top of Page
+            </button>
+        </div>
+        <footer style="padding-top: 3%; font-size: smaller;">
+            Coded by | Max 2022
+        </footer>
+</body>
+<script>
+    var mybutton = document.getElementById('home');
+    function Home() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</html>
