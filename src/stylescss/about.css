@@ -10,6 +10,14 @@ body {
   text-align: center;
   font-family: "trebuchet MS", sans-serif;
 }
+
+.description {
+  border: solid black;
+  margin: 100px;
+  padding-right: 5%;
+  padding-left: 5;
+}
+
 .container-1 {
   display: flex;
   flex-direction: column;
