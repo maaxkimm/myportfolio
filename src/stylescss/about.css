@@ -13,6 +13,7 @@ body {
 
 .description {
   border: solid black;
+  padding-left: 20px;
   margin: 100px;
   padding-right: 5%;
   padding-left: 5;
