@@ -7,7 +7,7 @@ function Home() {
 const text = document.getElementById("typing1");
 const phrases = [
   "Welcome to my online portfolio, made by me! :)",
-  "I used HTML/CSS and Javascript, and I'm currently working on adding a back-end using Django! :D",
+  "I used HTML/CSS and Javascript, and I'm currently working on adding a backend using Django! :D",
   "I enjoy building things! :o",
 ];
 
